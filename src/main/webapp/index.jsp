@@ -1,5 +1,3 @@
-Here is the complete HTML/CSS/JavaScript code for an eco-friendly e-commerce landing page. It's a self-contained, ready-to-run webpage.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
