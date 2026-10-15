@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoNest — Sustainable Living</title>
+  <title>EcoNest — Sustainable Living in Burgundy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    /* -------- Eco-friendly ROOT -------- */
+    /* -------- BURGUNDY ECO ROOT -------- */
     :root {
-      --bg: #f6f9f4;
+      /* Burgundy-forward palette */
+      --bg: #f7f1f0;                /* warm parchment */
       --bg-card: #ffffff;
-      --primary: #1e3a2e;
-      --primary-light: #2b5e44;
-      --accent: #5f9e6b;
-      --accent-light: #cbe6d0;
-      --accent-dark: #3d7a4d;
-      --muted: #4e6b5a;
-      --muted-light: #8aa79a;
-      --surface: #eaf3eb;
-      --success: #3d9b6b;
-      --warning: #e8b84b;
+      --primary: #4a1e2b;           /* deep burgundy */
+      --primary-light: #6b2e3f;
+      --accent: #9b4a5c;            /* muted burgundy rose */
+      --accent-light: #e6c6cd;      /* soft rose */
+      --accent-dark: #7a3545;
+      --muted: #6d4a52;
+      --muted-light: #a7858d;
+      --surface: #f0e4e5;
+      --success: #4d7a5a;
+      --warning: #c9923e;
       --radius: 20px;
       --radius-sm: 12px;
-      --shadow: 0 4px 20px rgba(30, 58, 46, 0.06);
-      --shadow-hover: 0 16px 48px rgba(30, 58, 46, 0.10);
+      --shadow: 0 4px 20px rgba(74, 30, 43, 0.06);
+      --shadow-hover: 0 16px 48px rgba(74, 30, 43, 0.12);
       --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       --container: 1240px;
     }
@@ -92,7 +93,7 @@
       border: 0;
     }
 
-    /* -------- eco buttons -------- */
+    /* -------- burgundy buttons -------- */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -116,7 +117,7 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(95, 158, 107, 0.30);
+      box-shadow: 0 8px 24px rgba(155, 74, 92, 0.30);
     }
 
     .btn-secondary {
@@ -129,13 +130,13 @@
       background: var(--primary-light);
       border-color: var(--primary-light);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(30, 58, 46, 0.20);
+      box-shadow: 0 8px 24px rgba(74, 30, 43, 0.20);
     }
 
     .btn-outline {
       background: transparent;
       color: var(--primary);
-      border-color: rgba(30, 58, 46, 0.15);
+      border-color: rgba(74, 30, 43, 0.18);
     }
 
     .btn-outline:hover {
@@ -152,8 +153,8 @@
     }
 
     .btn-ghost:hover {
-      background: rgba(255, 255, 255, 0.25);
-      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.28);
+      border-color: rgba(255, 255, 255, 0.5);
       transform: translateY(-2px);
     }
 
@@ -162,10 +163,10 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(246, 249, 244, 0.92);
+      background: rgba(247, 241, 240, 0.94);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(30, 58, 46, 0.06);
+      border-bottom: 1px solid rgba(74, 30, 43, 0.06);
     }
 
     .header-inner {
@@ -280,7 +281,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: #fff;
-      box-shadow: 0 0 0 4px rgba(95, 158, 107, 0.10);
+      box-shadow: 0 0 0 4px rgba(155, 74, 92, 0.10);
     }
 
     .search-wrap input {
@@ -326,7 +327,7 @@
     #mobileMenu {
       display: none;
       background: #fff;
-      border-top: 1px solid rgba(30, 58, 46, 0.04);
+      border-top: 1px solid rgba(74, 30, 43, 0.04);
       padding: 12px 0 20px;
     }
 
@@ -357,7 +358,7 @@
       color: var(--muted);
     }
 
-    /* -------- hero (eco) -------- */
+    /* -------- hero (burgundy eco) -------- */
     .hero {
       position: relative;
       display: flex;
@@ -367,7 +368,7 @@
       border-radius: var(--radius);
       overflow: hidden;
       margin: 20px 24px 0;
-      background: linear-gradient(135deg, #1e3a2e 0%, #2b5e44 100%);
+      background: linear-gradient(135deg, #2b1520 0%, #4a1e2b 100%);
     }
 
     .hero::before {
@@ -375,7 +376,7 @@
       position: absolute;
       inset: 0;
       background: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      opacity: 0.30;
+      opacity: 0.22;
       z-index: 0;
     }
 
@@ -386,8 +387,8 @@
 
     .hero .badge {
       display: inline-block;
-      background: rgba(95, 158, 107, 0.30);
-      color: #d4f0da;
+      background: rgba(155, 74, 92, 0.45);
+      color: #f0d5db;
       padding: 4px 16px;
       border-radius: 999px;
       font-weight: 600;
@@ -407,7 +408,7 @@
     }
 
     .hero p {
-      color: rgba(255, 255, 255, 0.85);
+      color: rgba(255, 245, 240, 0.88);
       font-size: 17px;
       max-width: 520px;
       margin-bottom: 28px;
@@ -462,7 +463,7 @@
       color: var(--accent-dark);
     }
 
-    /* -------- categories (eco) -------- */
+    /* -------- categories (burgundy) -------- */
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -515,7 +516,7 @@
       margin-top: 4px;
     }
 
-    /* -------- products (eco) -------- */
+    /* -------- products (burgundy) -------- */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -572,7 +573,7 @@
 
     .product-card .badge.sale {
       background: var(--warning);
-      color: var(--primary);
+      color: #fff;
     }
 
     .product-card .wish-btn {
@@ -582,7 +583,7 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.90);
+      background: rgba(255, 255, 255, 0.92);
       display: grid;
       place-items: center;
       font-size: 16px;
@@ -647,7 +648,7 @@
       align-items: center;
       gap: 4px;
       font-size: 13px;
-      color: #e8b84b;
+      color: var(--warning);
     }
 
     .product-card .body .rating span {
@@ -685,7 +686,7 @@
       background: var(--success);
     }
 
-    /* -------- deal (eco) -------- */
+    /* -------- deal (burgundy) -------- */
     .deal-wrap {
       display: flex;
       gap: 0;
@@ -718,7 +719,7 @@
     .deal-wrap .deal-content .tag {
       display: inline-block;
       background: var(--warning);
-      color: var(--primary);
+      color: #fff;
       padding: 4px 14px;
       border-radius: 999px;
       font-size: 12px;
@@ -792,7 +793,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* -------- testimonials (eco) -------- */
+    /* -------- testimonials (burgundy) -------- */
     .testimonials-scroll {
       display: flex;
       gap: 20px;
@@ -828,7 +829,7 @@
     }
 
     .testimonial-card .stars {
-      color: #e8b84b;
+      color: var(--warning);
       font-size: 16px;
       letter-spacing: 2px;
       margin-bottom: 10px;
@@ -867,7 +868,7 @@
       color: var(--muted);
     }
 
-    /* -------- newsletter (eco) -------- */
+    /* -------- newsletter (burgundy) -------- */
     .newsletter-wrap {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
       border-radius: var(--radius);
@@ -940,11 +941,11 @@
       width: 100%;
     }
 
-    /* -------- footer (eco) -------- */
+    /* -------- footer (burgundy) -------- */
     footer {
       margin-top: 16px;
       padding: 44px 0 28px;
-      border-top: 1px solid rgba(30, 58, 46, 0.06);
+      border-top: 1px solid rgba(74, 30, 43, 0.06);
     }
 
     .footer-grid {
@@ -1016,12 +1017,12 @@
     .footer-bottom {
       text-align: center;
       padding-top: 20px;
-      border-top: 1px solid rgba(30, 58, 46, 0.06);
+      border-top: 1px solid rgba(74, 30, 43, 0.06);
       color: var(--muted-light);
       font-size: 13px;
     }
 
-    /* -------- responsive (eco) -------- */
+    /* -------- responsive (burgundy) -------- */
     @media (max-width: 1200px) {
       .products-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -1256,4 +1257,550 @@
           <button class="icon-btn" title="Account" aria-label="Account"><i class="far fa-user"></i></button>
           <button class="icon-btn" title="Wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
           <div class="cart-wrap">
-            <button class="icon-btn" id="cartBtn" title
+            <button class="icon-btn" id="cartBtn" title="Cart" aria-label="Cart">
+              <i class="fas fa-shopping-bag"></i>
+            </button>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu">
+      <div class="container">
+        <ul>
+          <li><a href="#"><i class="fas fa-leaf"></i> Home</a></li>
+          <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+          <li><a href="#products"><i class="fas fa-star"></i> Favorites</a></li>
+          <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
+          <li><a href="#testimonials"><i class="fas fa-heart"></i> Stories</a></li>
+          <li><a href="#"><i class="far fa-user"></i> Account</a></li>
+          <li><a href="#"><i class="far fa-heart"></i> Wishlist</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero banner">
+      <div class="container">
+        <div class="badge"><i class="fas fa-seedling"></i> Sustainable Collection 2026</div>
+        <h1>Live Green,<br>Shop Mindfully</h1>
+        <p>Eco‑friendly essentials crafted with care — organic fabrics, recycled materials & timeless design. Free carbon‑neutral shipping.</p>
+        <div class="actions">
+          <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Shop Now</button>
+          <button class="btn btn-ghost" id="exploreDeals"><i class="fas fa-clock"></i> Explore Deals</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="title-group">
+            <h2 id="cat-title">Browse Categories</h2>
+            <p>Find exactly what you're looking for</p>
+          </div>
+          <a href="#" class="view-all">All Categories <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="categories-grid" id="categoriesGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products" aria-labelledby="prod-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="title-group">
+            <h2 id="prod-title">Trending Now</h2>
+            <p>What's hot — popular picks from our community</p>
+          </div>
+          <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- DEAL -->
+    <section class="section" id="deals" aria-labelledby="deals-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="title-group">
+            <h2 id="deals-title">⚡ Flash Deal</h2>
+            <p>Grab it before it's gone — limited stock</p>
+          </div>
+        </div>
+        <div class="deal-wrap">
+          <div class="deal-img">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Eco-friendly bamboo product" loading="lazy">
+          </div>
+          <div class="deal-content">
+            <span class="tag"><i class="fas fa-bolt"></i> Limited Offer</span>
+            <h3>Bamboo Living Set</h3>
+            <p class="desc">Handcrafted from sustainable bamboo — durable, elegant, and kind to the planet.</p>
+            <div>
+              <span class="price-big">$79 <span class="old">$119</span></span>
+            </div>
+            <p class="stock">Only <strong>12</strong> items left — hurry!</p>
+            <div class="timer-grid" id="dealTimer">
+              <div class="timer-box">
+                <div class="num" id="dealDays">0</div>
+                <div class="label">Days</div>
+              </div>
+              <div class="timer-box">
+                <div class="num" id="dealHours">00</div>
+                <div class="label">Hours</div>
+              </div>
+              <div class="timer-box">
+                <div class="num" id="dealMinutes">00</div>
+                <div class="label">Mins</div>
+              </div>
+              <div class="timer-box">
+                <div class="num" id="dealSeconds">00</div>
+                <div class="label">Secs</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="buyDeal"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials" aria-labelledby="test-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="title-group">
+            <h2 id="test-title">What Our Customers Say</h2>
+            <p>Real reviews from real people</p>
+          </div>
+        </div>
+        <div class="testimonials-scroll" id="testimonialsList"></div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section" aria-labelledby="news-title">
+      <div class="container">
+        <div class="newsletter-wrap">
+          <div class="text">
+            <h3 id="news-title">Stay in the Loop</h3>
+            <p>Get exclusive offers, early access & new arrivals</p>
+          </div>
+          <form id="newsletterForm" onsubmit="return false;">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" aria-label="Email" required />
+            <button class="btn" id="subscribeBtn"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            <div id="newsletterMsg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="brand-col">
+          <div class="brand">
+            <i class="fas fa-seedling"></i>
+            <span>Eco<span class="accent">Nest</span></span>
+          </div>
+          <p>Modern eco‑friendly e‑commerce demo built with care. Sustainable products, seamless experience.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> EcoNest. All rights reserved. Sustainably made.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    // ============================================================
+    // DATA (eco-friendly products)
+    // ============================================================
+    const CATEGORIES = [
+      { id: 'bamboo', name: 'Bamboo', icon: 'fa-tree', count: 24 },
+      { id: 'organic', name: 'Organic Cotton', icon: 'fa-tshirt', count: 18 },
+      { id: 'recycled', name: 'Recycled', icon: 'fa-recycle', count: 42 },
+      { id: 'zerowaste', name: 'Zero Waste', icon: 'fa-leaf', count: 31 },
+      { id: 'natural', name: 'Natural Care', icon: 'fa-spa', count: 27 },
+      { id: 'accessories', name: 'Eco Accessories', icon: 'fa-watch', count: 39 }
+    ];
+
+    const PRODUCTS = [
+      { id: 1, title: 'Bamboo Cutlery Set', price: 24, oldPrice: 34, rating: 5, reviews: 128, badge: 'New',
+        img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80',
+        category: 'Zero Waste' },
+      { id: 2, title: 'Organic Cotton Tote', price: 18, rating: 4, reviews: 86, badge: '',
+        img: 'https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=600&q=80',
+        category: 'Organic Cotton' },
+      { id: 3, title: 'Recycled Glass Bottle', price: 29, oldPrice: 39, rating: 5, reviews: 214, badge: 'Sale',
+        img: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80',
+        category: 'Recycled' },
+      { id: 4, title: 'Natural Loofah Sponge', price: 12, rating: 4, reviews: 53, badge: '',
+        img: 'https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80',
+        category: 'Natural Care' },
+      { id: 5, title: 'Bamboo Toothbrush Set', price: 15, rating: 5, reviews: 42, badge: 'New',
+        img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80',
+        category: 'Bamboo' },
+      { id: 6, title: 'Hemp Backpack', price: 79, rating: 5, reviews: 189, badge: '',
+        img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80',
+        category: 'Eco Accessories' },
+      { id: 7, title: 'Organic Cotton Towels', price: 45, oldPrice: 59, rating: 4, reviews: 67, badge: 'Sale',
+        img: 'https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=600&q=80',
+        category: 'Organic Cotton' },
+      { id: 8, title: 'Recycled Notebook', price: 14, rating: 5, reviews: 156, badge: '',
+        img: 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80',
+        category: 'Recycled' }
+    ];
+
+    const TESTIMONIALS = [{
+      name: 'Ava Martin',
+      role: 'Verified Buyer',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80',
+      text: 'Fast shipping and excellent support. The bamboo set exceeded my expectations!',
+      stars: 5
+    }, {
+      name: 'Michael Lee',
+      role: 'Frequent Shopper',
+      avatar: 'https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80',
+      text: 'Great eco selection and smooth checkout. Will definitely shop again.',
+      stars: 4
+    }, {
+      name: 'Sophia Chen',
+      role: 'Designer',
+      avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80',
+      text: 'Love the quality and the packaging. Everything arrived in perfect condition.',
+      stars: 5
+    }, {
+      name: 'James Wilson',
+      role: 'Tech Enthusiast',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80',
+      text: 'Amazing prices on sustainable electronics. The recycled notebook deal was unbeatable.',
+      stars: 5
+    }];
+
+    // ============================================================
+    // STATE
+    // ============================================================
+    let cartCount = 0;
+
+    // ============================================================
+    // DOM REFS
+    // ============================================================
+    const categoriesGrid = document.getElementById('categoriesGrid');
+    const productsGrid = document.getElementById('productsGrid');
+    const cartCountEl = document.getElementById('cartCount');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterEmail = document.getElementById('newsletterEmail');
+    const newsletterMsg = document.getElementById('newsletterMsg');
+    const testimonialsList = document.getElementById('testimonialsList');
+
+    // ============================================================
+    // RENDER FUNCTIONS
+    // ============================================================
+    function renderCategories() {
+      categoriesGrid.innerHTML = '';
+      CATEGORIES.forEach(cat => {
+        const el = document.createElement('div');
+        el.className = 'cat-card';
+        el.innerHTML = `
+          <div class="icon-wrap"><i class="fas ${cat.icon}"></i></div>
+          <h4>${cat.name}</h4>
+          <div class="count">${cat.count} items</div>
+        `;
+        el.addEventListener('click', () => {
+          searchInput.value = cat.name;
+          filterProducts(cat.name);
+          document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        categoriesGrid.appendChild(el);
+      });
+    }
+
+    function renderProducts(list) {
+      productsGrid.innerHTML = '';
+      if (!list.length) {
+        productsGrid.innerHTML =
+          `<p style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);">No products found.</p>`;
+        return;
+      }
+      list.forEach(p => {
+        const el = document.createElement('article');
+        el.className = 'product-card';
+        const badgeClass = p.badge === 'Sale' ? 'sale' : '';
+        const badgeHtml = p.badge ? `<span class="badge ${badgeClass}">${p.badge}</span>` : '';
+        const oldPriceHtml = p.oldPrice ? `<span class="old-price">$${p.oldPrice.toLocaleString()}</span>` : '';
+        const stars = '★'.repeat(Math.round(p.rating)) + '☆'.repeat(5 - Math.round(p.rating));
+        el.innerHTML = `
+          <div class="img-wrap">
+            <img src="${p.img}" alt="${escapeHtml(p.title)}" loading="lazy">
+            ${badgeHtml}
+            <button class="wish-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="body">
+            <div class="category-tag">${p.category}</div>
+            <h5>${escapeHtml(p.title)}</h5>
+            <div class="price-row">
+              <span class="price">$${p.price.toLocaleString()}</span>
+              ${oldPriceHtml}
+            </div>
+            <div class="rating">
+              ${stars} <span>(${p.reviews})</span>
+            </div>
+          </div>
+          <div class="footer">
+            <button class="add-btn" data-id="${p.id}"><i class="fas fa-cart-plus"></i> Add</button>
+          </div>
+        `;
+        productsGrid.appendChild(el);
+      });
+
+      // Add to cart listeners
+      productsGrid.querySelectorAll('.add-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const id = Number(this.dataset.id);
+          addToCart(id, this);
+        });
+      });
+    }
+
+    function renderTestimonials() {
+      testimonialsList.innerHTML = '';
+      TESTIMONIALS.forEach(t => {
+        const stars = '★'.repeat(t.stars) + '☆'.repeat(5 - t.stars);
+        const el = document.createElement('div');
+        el.className = 'testimonial-card';
+        el.innerHTML = `
+          <div class="stars">${stars}</div>
+          <blockquote>“${escapeHtml(t.text)}”</blockquote>
+          <div class="author">
+            <img class="avatar" src="${t.avatar}" alt="${escapeHtml(t.name)}" loading="lazy">
+            <div>
+              <div class="name">${escapeHtml(t.name)}</div>
+              <div class="role">${escapeHtml(t.role)}</div>
+            </div>
+          </div>
+        `;
+        testimonialsList.appendChild(el);
+      });
+    }
+
+    // ============================================================
+    // UTILITY FUNCTIONS
+    // ============================================================
+    function escapeHtml(text) {
+      return String(text).replace(/[&<>"']/g, s => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      } [s]));
+    }
+
+    function updateCartCount() {
+      cartCountEl.textContent = cartCount;
+      cartCountEl.style.transform = 'scale(1.3)';
+      setTimeout(() => cartCountEl.style.transform = 'scale(1)', 200);
+    }
+
+    function addToCart(productId, btnEl) {
+      const p = PRODUCTS.find(x => x.id === productId);
+      if (!p) return;
+      cartCount++;
+      updateCartCount();
+
+      if (btnEl) {
+        const orig = btnEl.innerHTML;
+        btnEl.innerHTML = '<i class="fas fa-check"></i> Added';
+        btnEl.classList.add('added');
+        setTimeout(() => {
+          btnEl.innerHTML = orig;
+          btnEl.classList.remove('added');
+        }, 1500);
+      }
+      const cartBtn = document.getElementById('cartBtn');
+      cartBtn.style.color = 'var(--accent)';
+      setTimeout(() => cartBtn.style.color = '', 400);
+    }
+
+    function filterProducts(query) {
+      const q = String(query || '').trim().toLowerCase();
+      if (!q) {
+        renderProducts(PRODUCTS);
+        return;
+      }
+      const filtered = PRODUCTS.filter(p =>
+        p.title.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q)
+      );
+      renderProducts(filtered);
+    }
+
+    // ============================================================
+    // DEAL TIMER
+    // ============================================================
+    (function setupDealTimer() {
+      const now = new Date();
+      const target = new Date(now.getTime() + (24 * 60 + 36) * 60 * 1000);
+
+      function tick() {
+        const diff = target - new Date();
+        if (diff <= 0) {
+          document.getElementById('dealDays').textContent = '0';
+          document.getElementById('dealHours').textContent = '00';
+          document.getElementById('dealMinutes').textContent = '00';
+          document.getElementById('dealSeconds').textContent = '00';
+          return;
+        }
+        const days = Math.floor(diff / (24 * 3600 * 1000));
+        const hours = Math.floor((diff % (24 * 3600 * 1000)) / (3600 * 1000));
+        const mins = Math.floor((diff % (3600 * 1000)) / (60 * 1000));
+        const secs = Math.floor((diff % (60 * 1000)) / 1000);
+        document.getElementById('dealDays').textContent = days;
+        document.getElementById('dealHours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('dealMinutes').textContent = String(mins).padStart(2, '0');
+        document.getElementById('dealSeconds').textContent = String(secs).padStart(2, '0');
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    // ============================================================
+    // EVENT BINDINGS
+    // ============================================================
+
+    // Search
+    searchBtn.addEventListener('click', () => filterProducts(searchInput.value));
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') filterProducts(e.target.value);
+    });
+
+    // Mobile menu
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.style.display === 'block';
+      mobileMenu.style.display = isOpen ? 'none' : 'block';
+      mobileToggle.innerHTML = isOpen ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+
+    // Hero buttons
+    document.getElementById('shopNow').addEventListener('click', () => {
+      document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    document.getElementById('exploreDeals').addEventListener('click', () => {
+      document.getElementById('deals').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Deal buy
+    document.getElementById('buyDeal').addEventListener('click', function() {
+      cartCount++;
+      updateCartCount();
+      const orig = this.innerHTML;
+      this.innerHTML = '<i class="fas fa-check"></i> Added!';
+      this.style.background = 'var(--success)';
+      setTimeout(() => {
+        this.innerHTML = orig;
+        this.style.background = '';
+      }, 1600);
+    });
+
+    // Newsletter
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = newsletterEmail.value.trim();
+      if (!email || !email.includes('@')) {
+        newsletterMsg.textContent = 'Please enter a valid email address.';
+        newsletterMsg.style.color = '#f0b0b0';
+        newsletterMsg.style.display = 'block';
+        return;
+      }
+      newsletterMsg.textContent = '🎉 Thanks for subscribing!';
+      newsletterMsg.style.color = '#b8e0c0';
+      newsletterMsg.style.display = 'block';
+      newsletterEmail.value = '';
+      setTimeout(() => {
+        newsletterMsg.style.display = 'none';
+      }, 3500);
+    });
+
+    // Cart button click feedback
+    document.getElementById('cartBtn').addEventListener('click', () => {
+      alert(`🛒 Your cart has ${cartCount} item${cartCount !== 1 ? 's' : ''}.`);
+    });
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    renderCategories();
+    renderProducts(PRODUCTS);
+    renderTestimonials();
+    updateCartCount();
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        mobileMenu.style.display = 'none';
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      }
+    });
+
+    console.log('🚀 EcoNest — burgundy eco‑friendly e‑commerce demo loaded.');
+  </script>
+
+</body>
+</html>
